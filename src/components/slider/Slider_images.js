@@ -11,16 +11,7 @@ const images = [candles, flower, rockBathtub, whiteBath, whiteFlower];
 
 function Slider_images() {
   const [imageIndex, setImageIndex] = useState(0);
-  /*const NextArrow = ({ onClick }) => {
-    <div className="arrow_next" onClick={onClick}>
-      <FaArrowRight />
-    </div>;
-  };
-  const PrevArrow = ({ onClick }) => {
-    <div className="arrow_prev" onClick={onClick}>
-      <FaArrowLeft />
-    </div>;
-  };*/
+
   const settings = {
     dots: false,
     fade: true,
@@ -34,7 +25,7 @@ function Slider_images() {
     cssEase: "ease-in-out",
     infinite: true,
     lazyLoad: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
   return (
     <div className="Slider_App">
